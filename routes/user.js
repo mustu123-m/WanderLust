@@ -3,7 +3,7 @@ const User=require('../models/user.js');
 const passport=require('passport');
 const {isAuthenticated,saveRedirectUrl}=require('../authenticate.js');
 const route=express.Router({mergeParams:true});
-const userController=require('')
+const userController=require('../controllers/user.js');
 
 route.get("/signup",(req,resp)=>{
 resp.render("user/signupform.ejs");
