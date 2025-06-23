@@ -1,0 +1,44 @@
+<% layout('listing/boilerplate') -%>
+<body>
+    <div class="row">
+        <div class="col-8">
+    <h1 class="offset-2">Edit Listing</h1>
+    <form method="post" action="/listing/<%=listing.id%>?_method=PATCH" novalidate class="needs-validation" enctype="multipart/form-data">
+    <div class="mb-3 offset-2">
+        
+        <label for="title" class="form-label " >Title:</label>
+    <input type="text" name="title" value="<%=listing.title%>" id="title" class="form-control" required>
+     <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Title</div>
+ </div>
+   <div class="mb-3 offset-2">
+    <label for="Image" class="form-label " >Image:</label>
+    <input type="file" name="image[url]" id="Image" class="form-control">
+ </div>
+   <div class="mb-3  offset-2">
+    <label for="Price" class="form-label">Price:</label>
+    <input type="number" name="price" id="price" value="<%=listing.price%>" class="form-control" required>
+  <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Price</div>  
+</div>
+ 
+     <div class="mb-3  offset-2">
+          <label for="location" class="form-label">Location:</label>
+    <input type="text" name="location" id="location" value="<%=listing.location%>" class="form-control" required>
+      <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Location</div>
+</div class="mb-3  offset-2">
+   
+     <div class="mb-3  offset-2"> <label for="country" class="form-label" required>Country:</label>
+    <input type="text" name="country" id="country" value="<%=listing.country%>" class="form-control" required>
+<div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Country</div>
+</div>
+     
+    <button type="submit" class="btn btn-dark offset-2">Edit</button>
+    </form>
+    </div>
+   
+    </div>
+    <script src="/js/bootstrapvalidate.js"></script>
+</body>

@@ -1,0 +1,18 @@
+<% layout('listing/boilerplate') -%>
+<body>
+     <form method="post" action="/login" required novalidate class="needs-validation">
+    <div class="mb-3  offset-2">
+    <label for="username" class="form-label">Username:</label>
+    <input type="text" name="username" id="username" class="form-control" required>
+    <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Username:</div>
+</div>
+    <div class="mb-3  offset-2">
+        <label for="password" class="form-label">Password</label>
+    <input type="password" name="password" id="password" class="form-control" required>
+    <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter Password</div>
+    </div>
+     <button type="submit" class="btn btn-success  offset-2">Singup</button>
+     </form>
+</body>

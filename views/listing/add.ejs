@@ -1,0 +1,40 @@
+<% layout('listing/boilerplate') -%>
+<body>
+    <div class="row">
+        <div class="col-8">
+    <form method="post" action="/listing" required novalidate class="needs-validation" enctype="multipart/form-data">
+       <div class="mb-3 mt-2 offset-2">
+    <label for="title" class="form-label">Title:</label>
+ <input type="text" name="title" id="title" class="form-control" required>   
+ <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Title</div> 
+</div>
+ <div class="mb-3 offset-2">
+    <label for="image" class="form-label">Image:</label>
+ <input type="file" name="image[url]" id="image" class="form-control">   
+</div>
+<div class="mb-3  offset-2">
+    <label for="Price" class="form-label">Price:</label>
+    <input type="text" name="price" id="price" class="form-control" required>
+    <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Price</div>
+</div>
+    <div class="mb-3  offset-2">
+        <label for="location" class="form-label">Location:</label>
+    <input type="text" name="location" id="location" class="form-control" required>
+    <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Location</div>
+    </div>
+    <div class="mb-3  offset-2">
+         <label for="country" class="form-label">Country:</label>
+    <input type="text" name="country" id="country" class="form-control" required>
+    <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Country</div>
+    </div>
+   
+     <button type="submit" class="btn btn-dark  offset-2">Post</button>
+</form>
+</div>
+</div>
+<script src="/js/bootstrapvalidate.js"></script>
+</body>

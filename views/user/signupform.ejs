@@ -1,0 +1,30 @@
+<% layout('listing/boilerplate') -%>
+<body>
+    <h2 class="offset-2">Sign Up On WanderLust</h2>
+    <div class="row">
+        <div class="col-8">
+   
+       <div class="mb-3 offset-2">
+    <label for="email" class="form-label">Email:</label>
+ <input type="text" name="email" id="email" class="form-control" required>   
+ <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Valid Email</div> 
+</div>
+<div class="mb-3  offset-2">
+    <label for="username" class="form-label">Username:</label>
+    <input type="text" name="username" id="username" class="form-control" required>
+    <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter a Username:</div>
+</div>
+    <div class="mb-3  offset-2">
+        <label for="password" class="form-label">Password</label>
+    <input type="password" name="password" id="password" class="form-control" required>
+    <div class="valid-feedback">Correct</div>
+    <div class="invalid-feedback">Please Enter Password</div>
+    </div>
+     <button type="submit" class="btn btn-success  offset-2">Singup</button>
+</form>
+</div>
+</div>
+<script src="/js/bootstrapvalidate.js"></script>
+</body>
