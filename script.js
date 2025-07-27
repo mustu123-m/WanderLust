@@ -87,7 +87,7 @@ async function main() {
 }
 
 app.get("/",(req,resp)=>{
-    resp.send("Hi");
+    resp.redirect("/listing");
 });
 
 app.use((req,resp,next)=>{
